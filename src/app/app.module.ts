@@ -15,7 +15,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MyApp,
     AboutPage,
     TabsPage,
-    CalculatorPage
+    CalculatorPage,
   ],
   imports: [
     BrowserModule,
@@ -26,7 +26,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MyApp,
     AboutPage,
     TabsPage,
-    CalculatorPage
+    CalculatorPage,
   ],
   providers: [
     StatusBar,
