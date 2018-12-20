@@ -9,7 +9,7 @@ import { CalculatorPage } from '../calculator/calculator'
 })
 export class TabsPage {
   calculatorTab = CalculatorPage;
-  tab2Root = AboutPage;
+  aboutTab = AboutPage;
 
   constructor() {
 
