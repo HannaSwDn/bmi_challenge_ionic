@@ -14,7 +14,11 @@ export class Page {
     return element(by.tagName('ion-title')).getText();
   }
 
+<<<<<<< HEAD
   fillInForm() {
     
   }
+=======
+  
+>>>>>>> 16b3cbd130fc7158301c5c5010fcfa16d4d74be0
 }

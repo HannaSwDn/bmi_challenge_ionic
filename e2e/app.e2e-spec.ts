@@ -20,6 +20,7 @@ describe('App', () => {
 
     it('fills in form'), () => {
       page.fillInForm();
-    }
+
+    };
   })
 });
