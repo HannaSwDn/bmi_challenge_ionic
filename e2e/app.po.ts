@@ -14,5 +14,7 @@ export class Page {
     return element(by.tagName('ion-title')).getText();
   }
 
-  
+  fillInForm() {
+    
+  }
 }
