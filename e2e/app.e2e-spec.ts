@@ -17,5 +17,15 @@ describe('App', () => {
         expect(title).toEqual('BMI calculator');
     	});
     });
+
+    it('should have a form', () => {
+      let form;
+      form = page.getForm();
+      expect(form).toEqual('ion-list');
+    })
+
+    it('should have a calculate button', () => {
+
+    })
   })
 });

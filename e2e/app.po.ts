@@ -12,5 +12,9 @@ export class Page {
 
 	getPageOneTitleText() {
     return element(by.tagName('ion-title')).getText();
-	}
+  }
+
+  getForm() {
+    return element(by.tagName('ion-list')).getTagName();
+  }
 }
