@@ -18,14 +18,8 @@ describe('App', () => {
     	});
     });
 
-    it('should have a form', () => {
-      let form;
-      form = page.getForm();
-      expect(form).toEqual('ion-list');
-    })
+    it('fills in form'), () => {
 
-    it('should have a calculate button', () => {
-
-    })
+    }
   })
 });

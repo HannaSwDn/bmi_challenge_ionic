@@ -14,7 +14,5 @@ export class Page {
     return element(by.tagName('ion-title')).getText();
   }
 
-  getForm() {
-    return element(by.tagName('ion-list')).getTagName();
-  }
+  
 }
