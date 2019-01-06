@@ -18,14 +18,8 @@ describe('App', () => {
     	});
     });
 
-    it('should have a form', () => {
-      let form;
-      form = page.getForm();
-      expect(form).toEqual('ion-list');
-    })
-
-    it('should have a calculate button', () => {
-
+    it('fills in the form and outputs a BMI value', () => {
+      page.fillInForm(65, 170);
     })
   })
 });

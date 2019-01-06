@@ -17,4 +17,10 @@ export class Page {
   getForm() {
     return element(by.tagName('ion-list')).getTagName();
   }
+
+  fillInForm(weight, height) {
+    element(by.id('weight')).element(by.tagName('input')).sendKeys(65);
+    element(by.id('height')).element(by.tagName('input')).sendKeys(170);
+    element(by.buttonText('Calculate')).click();
+  }
 }
