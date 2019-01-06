@@ -20,6 +20,9 @@ describe('App', () => {
 
     it('fills in the form and outputs a BMI value', () => {
       page.fillInForm(65, 170);
+      expect(page.displayResult()).toContain('Person: Weight 65 kg, Height 170 cm');
+      expect(page.displayResult()).toContain('BMI: 22.49');
+      expect(page.displayResult()).toContain('You are Normal');
     })
   })
 });

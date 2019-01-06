@@ -14,13 +14,13 @@ export class Page {
     return element(by.tagName('ion-title')).getText();
   }
 
-  getForm() {
-    return element(by.tagName('ion-list')).getTagName();
-  }
-
   fillInForm(weight, height) {
     element(by.id('weight')).element(by.tagName('input')).sendKeys(65);
     element(by.id('height')).element(by.tagName('input')).sendKeys(170);
     element(by.buttonText('Calculate')).click();
+  }
+
+  displayResult() {
+    return element(by.id('display')).getAttribute('textContent');
   }
 }
