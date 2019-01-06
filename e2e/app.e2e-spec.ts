@@ -19,10 +19,8 @@ describe('App', () => {
     });
 
     it('fills in form and outputs a result'), () => {
-      // find weight input and fill it in
-      // find height input and fill it in
-      // click calculate button
-      // now you should see 'You are normal'
+      page.fillInForm(65, 170);
+      expect(page).toContain('You are normal');
     };
   })
 });

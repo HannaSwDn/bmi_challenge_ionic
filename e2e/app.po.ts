@@ -15,7 +15,15 @@ export class Page {
   }
 
   fillInForm(weight, height) {
-    page.getField('weight').sendKeys(weight);
-    page.getField('height').sendKeys(height);
+    // find weight input and fill it in
+    element(by.name('weight')).element(by.tagName('ion-input')).sendKeys(weight);
+    // find height input and fill it in
+    element(by.name('height')).element(by.tagName('ion-input')).sendKeys(height);
+    // click calculate button
+    element(by.buttonText('Calculate')).click();
+  }
+
+  getResult() {
+    
   }
 }
