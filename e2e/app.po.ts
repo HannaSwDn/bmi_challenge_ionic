@@ -14,11 +14,8 @@ export class Page {
     return element(by.tagName('ion-title')).getText();
   }
 
-<<<<<<< HEAD
-  fillInForm() {
-    
+  fillInForm(weight, height) {
+    page.getField('weight').sendKeys(weight);
+    page.getField('height').sendKeys(height);
   }
-=======
-  
->>>>>>> 16b3cbd130fc7158301c5c5010fcfa16d4d74be0
 }
